@@ -6,7 +6,15 @@
     box-sizing: border-box;
     
     font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
 
+}
+body{
+    background: url("../assets/bg.svg");
+    
+    background-size: cover;
+    height: 209.0625rem;
+    
 }
 .nav{
     display: flex;
@@ -27,8 +35,8 @@
 
 }
 .nav-github img{
-    height: 50px;
-    width: 50px;
+    height: 3.125rem;
+    width: 3.125rem;
 }
 .nav-github button{
     margin-left: 1rem;
@@ -39,4 +47,57 @@
 
     font-weight: 600;
     font-size: 12pt;
+}
+.nav-menu{
+    display: flex;
+}
+.nav-menu a{
+    margin: 0 2rem;
+}
+.nav-menu a:hover p{
+    color: #2f2e6e;
+}
+.nav-menu a p{
+    color: #fff;
+    font-weight: 600;
+}
+.section-me{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 4rem;
+}
+.section-me strong, h1{
+    color: #da0a64;
+}
+.section-me-img{
+    width: 50%;
+}
+.section-me-img img{
+    height: 21.875rem;
+    width: 21.875rem;
+    border-radius: 100%;
+}
+.section-me-info{
+    width: 50%;
+}
+.section-me-info h1{
+    margin-bottom: 1rem;
+}
+.section-me-info p{
+    color: #fff;
+    font-size: 12pt;
+}
+.section-me-aboutme{
+  display: inline-block;
+  margin: 1rem 0;  
+}
+.section-me-text{
+    height: auto;
+    width: 25rem;
+
+    background: rgba(0, 0, 0, 0.486);
+
+    padding: 1rem;
+    border-radius: .5rem;
 }
