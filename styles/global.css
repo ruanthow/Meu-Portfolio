@@ -403,9 +403,6 @@
 }
 .section-contact-social-midia{
     display: flex;
-    position: absolute;
-    right: 0;
-    margin-right: 3.125rem;
 }
 .section-contact-social-midia img {
     margin: 0 1rem;
@@ -549,10 +546,7 @@
     .section-hobbies-text{
         font-size: 18pt;
     }
-    .section-contact-social-midia{
-        position: relative;
-        margin: 0;
-    }
+    
     .section-experience-formation{
         height: 62%;
     }
