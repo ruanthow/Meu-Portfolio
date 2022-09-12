@@ -9,11 +9,7 @@
     scroll-behavior: smooth;
 
 }
-body{
-   
-    
-    
-}
+
 .nav{
     display: flex;
     align-items: center;
@@ -65,6 +61,9 @@ body{
     color: #fff;
     font-weight: 600;
 }
+.nav-menu-mobile{
+    display: none;
+}
 
 .section-welcome, .section-about-me, .section-hobbies{
    display: flex;
@@ -82,7 +81,7 @@ body{
 }
 .section-welcome-img img{
     margin-top: 5.5rem;
-   
+    height: 100%;
     width: 100%;
 }
 .section-welcome-info{
@@ -125,7 +124,7 @@ body{
 
 .section-about-me-img img{
     position: absolute;
-    top: -25rem;
+    top: -28rem;
     height: 650px;
 }
 
@@ -411,32 +410,158 @@ body{
 .section-contact-social-midia img {
     margin: 0 1rem;
 }
-@media (max-width:1440px){
+@media (max-width:1440px) {
     .section-hobbies-text{
         font-size: 25pt;
+    }
+}
+@media (max-width:1024px){
+    .section-hobbies-text, .section-welcome-text, .section-about-me-text{
+        font-size: 20pt;
+    }
+
+    .section-about-me-img img{
+        height: 500px;
+        width: 450px;
+    }
+    
+    .section-hobbies-img img{
+        height: 600px;
+        width: 400px;
+    }
+}
+@media (max-width:768px){
+    .section-hobbies-text, .section-welcome-text, .section-about-me-text{
+        font-size: 25pt;
+    }
+    .section-experience-formation{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .section-welcome-img, .section-about-me-img, .section-hobbies-img{
+        display: none;
+    }
+    .section-welcome-info{
         width: 100%;
+        background: #101010;
+    }
+    .section-about-me-info, .section-hobbies-info{
+        width: 100%;
+    }
+    .nav{
+        background: #B28E6C;
+    }
+    .nav-github button{
+        color: #fff;
+    }
+    .nav a {
+        font-size: 11pt;
+    }
+    .nav-menu a{
+        width: 80px;
+        margin: 0.5rem;
+        text-align: center;
+    }
+    .section-contact-social-midia{
+        position: relative;
+        margin: 0;
     }
 }
 
-@media (max-width: 1024px){
-    .section-welcome-info h1, .section-about-me-info h1, .section-hobbies-info h1{
-        font-size: 70pt;
+@media (max-width:425px){
+
+    .nav{
+        position: absolute;
     }
-    .section-welcome-text, .section-about-me-text,
+    .nav-menu{
+      display: none;
+    }
+    .nav-menu-mobile{
+        display: flex;
+    }
+    .nav-menu-mobile-burger-button{
+        height: 90px;
+        width: 45px;  
+        position: relative;
+        display: flex;
+        justify-content: center;
+     
+    }
+    .nav-menu-mobile-burger-button span{
+        position: absolute;
+        height: 5px;
+        width: 45px;
+        background: rgb(26, 26, 26);
+    }
+
+    .nav-menu-mobile-burger-button span:nth-child(1){
+        
+        top: 35px;
+        border-radius: 8px;
+    }
+    .nav-menu-mobile-burger-button span:nth-child(2){
+        
+        top: 45px;
+        border-radius: 8px;
+        
+    }
+    .nav-menu-mobile-burger-button span:nth-child(3){
+        
+        top: 55px;
+        border-radius: 8px;
+    }
+    
+    .section-contact-message textarea{
+        width: 20rem;
+    }
+
+    .section-welcome-info h1, .section-about-me-info h1{
+        font-size: 70pt;
+        text-align: center;
+        width: 100%;
+    }
+    .section-welcome-text{
+        width: 90%;
+    }
+    .section-about-me-text{
+        font-size: 23pt;
+    }
     .section-hobbies-text{
         font-size: 20pt;
     }
+    .section-contact-name input, .section-contact-email input, .section-contact-message textarea{
+        width: 18rem;
+    }
+    .section-contact-social-midia{
+        position: relative;
+        margin: 0;
+    }
+}
+@media (max-width:375px){
+    .section-experience h1{
+        font-size: 70pt;
+    }
+    .section-contact-area{
+        padding: 1rem 2rem;
+    }
     .section-hobbies-text{
-        width: 90%;
+        font-size: 18pt;
     }
-    .section-welcome-img img,
-    .section-about-me-img img,
-    .section-hobbies-img img
-    {
-       
-        width: 450px;
+    .section-contact-social-midia{
+        position: relative;
+        margin: 0;
     }
-    .section-welcome-img img{
-        height: 100vh;
-    }   
+    .section-experience-formation{
+        height: 62%;
+    }
+    .section-experience-formation img{
+        height: 110px;
+        width: auto;
+    }
+    .section-experience-formation span{
+        width: 226px;
+    }
+   
 }
