@@ -302,7 +302,11 @@ body{
 }
 
 .section-mantra{
-    pointer-events: none;
+    background: url(../assets/bgSection.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
 .section-contact{
     height: calc(auto - 88px);
@@ -406,4 +410,33 @@ body{
 }
 .section-contact-social-midia img {
     margin: 0 1rem;
+}
+@media (max-width:1440px){
+    .section-hobbies-text{
+        font-size: 25pt;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px){
+    .section-welcome-info h1, .section-about-me-info h1, .section-hobbies-info h1{
+        font-size: 70pt;
+    }
+    .section-welcome-text, .section-about-me-text,
+    .section-hobbies-text{
+        font-size: 20pt;
+    }
+    .section-hobbies-text{
+        width: 90%;
+    }
+    .section-welcome-img img,
+    .section-about-me-img img,
+    .section-hobbies-img img
+    {
+       
+        width: 450px;
+    }
+    .section-welcome-img img{
+        height: 100vh;
+    }   
 }
