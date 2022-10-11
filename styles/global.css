@@ -308,6 +308,8 @@
     height: 100vh;
 }
 .section-contact{
+    height: calc(auto - 88px);
+
     background: #101010;
 }
 .section-contact h1{
@@ -544,7 +546,7 @@
     .section-hobbies-text{
         font-size: 18pt;
     }
-
+    
     .section-experience-formation{
         height: 62%;
     }
